@@ -630,6 +630,18 @@ nav {
   background-color: #151515;
 }
 
+.dark .nav-item .sub-menu {
+  background-color: #151515;
+}
+
+.dark .nav-item .sub-menu::before {
+  background-color: #151515;
+}
+
+.dark .nav-item .sub-menu a {
+  color: #ddd;
+}
+
 /* navbar toggler icon */
 .navbar-toggler-icon {
   display: inline-block;
