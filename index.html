@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Poochcare</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- GOOGLE FONT JOST -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- gg icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css.gg@2.0.0/icons/all.min.css" />
+
+  <!-- popup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css -->
+ 
+  <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body id="myBody">
+  <header id="site-header" class="main-header fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <h1>
+          <a class="navbar-brand" href="#">Pooch Care</a>
+        </h1>
+
+        <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul id="primary-menu" class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+
+            <li class="nav-item dropdown menu-item-has-children">
+
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Pages
+              </a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Landing Page</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav search-right mt-lg-0 mt-2">
+            <li id="search-menu" class="nav-item HeaderSearch" title="Search">
+              <a href="#search" class="btn search-search" title="search" onclick="openSearch()">
+                <span id="search-icon" class="fa fa-search" aria-hidden="true"></span>
+              </a>
+              <!-- search popup -->
+              <div id="myOverlay" class="pop-overlay">
+
+                <div class="search-popup">
+                  <form action="#url" method="get" class="d-sm-flex">
+                    <input id="inputSearch" type="text" name="s" placeholder="Search.." required="required"
+                      autofocus="" />
+                    <button type="submit">Search</button>
+                    <span class="header__closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                  </form>
+                </div>
+              </div>
+              <!-- search popup -->
+            </li>
+          </ul>
+        </div>
+
+        <!-- darkandlight theme -->
+        <div class="mobile-position darkandlight">
+          <nav class="navigation">
+            <div class="theme-switch-wrapper">
+              <div class="theme-switch">
+                <button class="mode-container" id="switchButton" title="Click to switch theme">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </button>
+                </label>
+              </div>
+          </nav>
+        </div>
+
+
+      </nav>
+    </div>
+  </header>
+  <div class="header-fixed-space-height"></div>
+
+  <section class="banner-slider">
+    <div class="banner-content">
+      <div class="owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+          <div class="owl-stage" style="transition: all 1s ease 0s">
+            <div class="owl-item">
+              <div class="item">
+                <li>
+                  <div class="slider-info banner-view banner-top1">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg text-left">
+                          <h5>Quality Things for Loving Pets</h5>
+                          <p>Keeps your Pet Smiling</p>
+                          <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="../pages/aboutus.html">Read
+                            More</a>
+                          <a class="btn btn-style border-btn mt-sm-5 mt-4" href="../pages/contact.html">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <li>
+                  <div class="slider-info banner-view banner-top2">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg ml-lg-auto">
+                          <h5>Delivering Happiness For Pets</h5>
+                          <p>For The Love Of Pets</p>
+                          <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="./pages/aboutus.html">Read More
+                          </a>
+                          <a class="btn btn-style border-btn mt-sm-5 mt-4" href="./pages/contact.html">Contact Us
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <li>
+                  <div class="slider-info banner-view banner-top3">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg text-left">
+                          <h5>Quality Things for Loving Pets</h5>
+                          <p>Keeps your Pet Smiling</p>
+                          <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="./pages/aboutus.html">Read More</a>
+                          <a class="btn btn-style border-btn mt-sm-5 mt-4" href="./pages/contact.html">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <li>
+                  <div class="slider-info banner-view banner-top4">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg ml-lg-auto">
+                          <h5>Delivering Happiness For Pets</h5>
+                          <p>We Help Your Projects</p>
+                          <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2" href="./pages/aboutus.html">Read More</a>
+                          <a class="btn btn-style border-btn mt-sm-5 mt-4" href="./pages/contact.html">Contact Us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- aboutus -->
+  <section class="w3l-grids-3 py-5" id="about">
+    <div class="container py-md-5 py-3">
+      <div class="bottom-ab-grids align-items-center">
+        <div class="bottom-ab-left">
+          <h6 class="sub-title HPAbout">About Us</h6>
+          <h3 class="hny-title">
+            We Love Your Pets Like They Are Our Own
+          </h3>
+          <p class="my-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequuntur hic odio voluptatem tenetur
+            consequatur. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia
+            Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis.
+          </p>
+          <a href="#url" class="read"> Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section class="w3l-features py-5" id="features">
+    <div class="container pt-lg-5 pt-md-4 HPServices">
+      <div class="grids-area-hny main-cont-wthree-fea row justify-content-center">
+        <div class="col-lg-4 col-sm-6 grids-feature">
+          <div class="area-box">
+            <div class="icon">
+              <span class="fa fa-snowflake"></span>
+            </div>
+            <h4>
+              <a href="#url" class="title-head">
+                Dog Walking</a>
+            </h4>
+            <p>
+              Vivamus a ligula quam. Ut blandit eu leo non.
+              Duis sed doloramet laoreet. Lorem ipsum dolor
+              sit amet Ut blandit eu leo.
+            </p>
+            <a href="#url" class="read"> Read More</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 grids-feature mt-sm-0">
+          <div class="area-box mb-lg-0">
+            <div class="icon">
+              <span class="fa fa-cutlery"></span>
+            </div>
+            <h4>
+              <a href="#url" class="title-head">Healthy Meals</a>
+            </h4>
+            <p>
+              Vivamus a ligula quam. Ut blandit eu leo non.
+              Duis sed doloramet laoreet. Lorem ipsum dolor
+              sit amet Ut blandit eu leo.
+            </p>
+            <a href="#url" class="read"> Read More</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
+          <div class="area-box mb-lg-0">
+            <div class="icon">
+              <span class="fa fa-sign-language"></span>
+            </div>
+            <h4>
+              <a href="#url" class="title-head">Pet Sitting</a>
+            </h4>
+            <p>
+              Vivamus a ligula quam. Ut blandit eu leo non.
+              Duis sed doloramet laoreet. Lorem ipsum dolor
+              sit amet Ut blandit eu leo.
+            </p>
+            <a href="#url" class="read"> Read More</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 grids-feature">
+          <div class="area-box">
+            <div class="icon">
+              <span class="fa fa-sitemap"></span>
+            </div>
+            <h4>
+              <a href="#url" class="title-head">Dog Activities</a>
+            </h4>
+            <p>
+              Vivamus a ligula quam. Ut blandit eu leo non.
+              Duis sed doloramet laoreet. Lorem ipsum dolor
+              sit amet Ut blandit eu leo.
+            </p>
+            <a href="#url" class="read"> Read More</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 grids-feature mt-sm-0">
+          <div class="area-box mb-lg-0">
+            <div class="icon">
+              <span class="fa fa-shower"></span>
+            </div>
+            <h4>
+              <a href="#url" class="title-head">Pet Daycare</a>
+            </h4>
+            <p>
+              Vivamus a ligula quam. Ut blandit eu leo non.
+              Duis sed doloramet laoreet. Lorem ipsum dolor
+              sit amet Ut blandit eu leo.
+            </p>
+            <a href="#url" class="read"> Read More</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
+          <div class="area-box">
+            <div class="icon">
+              <span class="fa fa-user-md"></span>
+            </div>
+            <h4>
+              <a href="#url" class="title-head">Pet Grooming</a>
+            </h4>
+            <p>
+              Vivamus a ligula quam. Ut blandit eu leo non.
+              Duis sed doloramet laoreet. Lorem ipsum dolor
+              sit amet Ut blandit eu leo.
+            </p>
+            <a href="#url" class="read"> Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="w3l-services1">
+    <div id="content-with-photo4-block" class="py-5">
+      <div class="container py-md-5 py-3 HPCWP">
+        <div class="cwp4-two row">
+          <div class="cwp4-image col-lg-6 pl-lg-5 mb-lg-0 mb-5">
+            <img src="../img/ab.jpg" class="img-fluid" alt="" />
+          </div>
+
+          <div class="cwp4-text col-lg-6">
+            <h6 class="sub-title">Why Choose Us</h6>
+            <h3 class="hny-title">What We Offer for You</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicingelit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud.Lorem ipsum
+              dolor sit amet, consectetur adipisicingelit.
+            </p>
+
+            <ul class="cont-4">
+              <li>
+                <span class="fa fa-check"></span>Certified
+                Groomer
+              </li>
+              <li>
+                <span class="fa fa-check"></span>10 Years of
+                Experience
+              </li>
+              <li>
+                <span class="fa fa-check"></span>Pet Lover
+              </li>
+              <li>
+                <span class="fa fa-check"></span>Customer
+                Supports
+              </li>
+              <li>
+                <span class="fa fa-check"></span>Veterinary
+                Help
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- number -->
+  <section class="w3l-stats py-5" id="stats">
+    <div class="gallery-inner container py-lg-0 py-3 HPStats">
+      <div class="row stats-con pb-lg-3 justify-content-center">
+        <div class="col-lg-3 col-6 stats_info counter_grid">
+          <p><span class="counter">730</span></p>
+          <h4>Happy Clients</h4>
+        </div>
+
+        <div class="col-lg-3 col-6 stats_info counter_grid1">
+          <p><span class="counter">80</span></p>
+          <h4>Professionals</h4>
+        </div>
+
+        <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-5">
+          <p><span class="counter">812</span></p>
+          <h4>Adopted Pets</h4>
+        </div>
+
+        <div class="col-lg-3 col-6 stats_info counter_grid2 mt-lg-0 mt-5">
+          <p><span class="counter">90</span></p>
+          <h4>Awards</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- menu js -->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+
+      });
+    });
+  </script>
+
+  <!-- disable body scroll when navbar is active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+
+  <!-- search pop up -->
+  <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+
+  <!-- DARK AND LIGHT THEME -->
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+  </script>
+
+  <!-- gg icons -->
+  <script src="https://cdn.jsdelivr.net/npm/css.gg@2.1.1/index.min.js"></script>
+
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          480: {
+            items: 1,
+          },
+          667: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    });
+  </script>
+  <script>
+    $("#owl-testimonials").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 1,
+        },
+        736: {
+          items: 1,
+        },
+        1000: {
+          items: 2,
+        },
+      },
+    });
+
+  </script>
+
+  <!-- popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script>
+    $('.video_center_play').magnificPopup({
+      type: 'iframe',
+
+
+      iframe: {
+        markup: '<div class="mfp-iframe-scaler">' +
+          '<div class="mfp-close"></div>' +
+          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+          '<div class="mfp-title">Some caption</div>' +
+          '</div>'
+      },
+      callbacks: {
+        markupParse: function (template, values, item) {
+          values.title = item.el.attr('title');
+        }
+      }
+
+
+    });
+  </script>
+
+  <!-- Number counter -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="../js/jquery.countup.js"></script>
+  <script>
+    $(".counter").countUp();
+  </script>
+
+
+</body>
+
+</html>
